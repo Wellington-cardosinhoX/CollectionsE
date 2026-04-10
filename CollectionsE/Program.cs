@@ -37,6 +37,8 @@ var musica3 = new Musica { Titulo = "Tempo Perdido", Artista = "Legião Urbana",
 
 var musica4 = new Musica { Titulo = "Índios", Artista = "Legião Urbana", Duracao = 323 };
 
+var musica5 = new Musica { Titulo = "Wellx", Artista = "Wellington", Duracao = 200 };
+
 var rockNacional = new Playlist { Nome = "Rock Nacional" };
 
 
@@ -47,6 +49,8 @@ rockNacional.Add(musica2);
 rockNacional.Add(musica3);
 
 rockNacional.Add(musica4);
+
+rockNacional.Add(musica5);
 
 ExibirPlaylist(rockNacional);
 
