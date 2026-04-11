@@ -143,6 +143,8 @@ public class SecondPlaylist : ICollection<SecondMusics>
     private List<SecondMusics> lista = [];
 
     public string Nome { get; set; } = string.Empty;
+
+    public int Ano { get; set; } = 2000;
 }
 
 
