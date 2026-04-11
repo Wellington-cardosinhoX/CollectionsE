@@ -127,6 +127,25 @@ public class Musica : IComparable
     }
 }
 
+
+public class SecondMusics
+{
+    public string Nome { get; set; } = string.Empty;
+
+    public string Descricao { get; set; } = string.Empty;
+
+    public int Duracao { get; set; }
+}
+
+
+public class SecondPlaylist : ICollection<SecondMusics>
+{
+    private List<SecondMusics> lista = [];
+
+    public string Nome { get; set; } = string.Empty;
+}
+
+
 public class Playlist : ICollection<Musica>
 {
     private List<Musica> lista = [];
