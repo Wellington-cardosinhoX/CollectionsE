@@ -143,8 +143,6 @@ public class SecondPlaylist : ICollection<SecondMusics>
     private List<SecondMusics> lista = [];
 
     public string Nome { get; set; } = string.Empty;
-
-    public Count => lista.Count;
 }
 
 
