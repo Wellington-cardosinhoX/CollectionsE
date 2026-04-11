@@ -68,7 +68,7 @@ ExibirPlaylist(rockNacional);
 void ExibirPlaylist(Playlist playlist)
 {
     Console.WriteLine($"\n Tocando as músicas de {playlist.Nome}");
-
+  
     foreach (var musica in playlist)
     {
         Console.WriteLine($"\t - {musica.Titulo} - {musica.Artista} - {musica.Duracao} segundos");
@@ -126,6 +126,25 @@ public class Musica : IComparable
         return 0;
     }
 }
+
+
+public class SecondMusics
+{
+    public string Nome { get; set; } = string.Empty;
+
+    public string Descricao { get; set; } = string.Empty;
+
+    public int Duracao { get; set; }
+}
+
+
+public class SecondPlaylist : ICollection<SecondMusics>
+{
+    private List<SecondMusics> lista = [];
+
+    public string Nome { get; set; } = string.Empty;
+}
+
 
 public class Playlist : ICollection<Musica>
 {
